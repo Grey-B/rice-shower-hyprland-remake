@@ -13,6 +13,7 @@ Remake of my previous Hyprland rice
 - Nautilus
 - Rofi
 - Starship
+- Swayidle
 - Swaylock-effects-git
 - Swaync
 - Waybar
