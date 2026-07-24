@@ -7,13 +7,13 @@ Remake of my previous Hyprland rice
 - Fastfetch
 - Fish
 - Hyprcap
-- Hypridle
 - Hyprland
 - Hyprpicker
 - Kitty
 - Nautilus
 - Rofi
 - Starship
+- Swaylock-effects-git
 - Swaync
 - Waybar
 - Wl-clip-persist
