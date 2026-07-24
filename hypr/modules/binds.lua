@@ -12,6 +12,7 @@ local clipboard   =
 "cliphist list | rofi -dmenu -display-columns 2  -theme /home/grey/.config/rofi/type-4/style-7.rasi| cliphist decode | wl-copy"
 local fileManager = "nautilus"
 local launcher    = "/home/grey/.config/rofi/type-4/launcher.sh"
+local lock        = "swaylock"
 local logout      = "command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"
 local notif       = "swaync-client --toggle-panel"
 local terminal    = "kitty"
@@ -20,7 +21,8 @@ local terminal    = "kitty"
 ---- KEYBINDINGS ----
 ---------------------
 
-hl.bind(mainMod .. " + ALT + M", hl.dsp.exec_cmd(logout))  --Logout
+hl.bind(mainMod .. " + ALT + M", hl.dsp.exec_cmd(logout)) --Logout
+hl.bind(mainMod .. " + ALT + L", hl.dsp.exec_cmd(lock))   --Lock screen
 
 -- Layout
 hl.bind(mainMod .. " + W", hl.dsp.window.close())                      -- Close window
@@ -113,7 +115,7 @@ hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd("hyprcap shot monitor:active -c")
 hl.bind("SHIFT + Print", hl.dsp.exec_cmd("hyprpicker -a"))
 
 -- Toggle between scrolling and dwindle
-hl.bind("SUPER + L", function()
+hl.bind(mainMod .. " + L", function()
 	local layouts = { "scrolling", "dwindle" }
 	local workspace = hl.get_active_workspace()
 	if hl.get_active_special_workspace() then

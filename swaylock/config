@@ -1,0 +1,38 @@
+ignore-empty-password
+font="Maple Mono"
+
+clock
+timestr=%R
+datestr=%a, %e of %B
+
+# screenshots
+image=~/.cache/wallpaper.png
+
+fade-in=1
+
+indicator
+indicator-radius=200
+
+inside-color=17164480
+inside-caps-lock-color=17164480
+inside-clear-color=ffe28580
+inside-ver-color=79f7fd80
+inside-wrong-color=c3416280
+
+ring-color=c34162ff
+ring-caps-lock-color=c34162ff
+ring-clear-color=ffe285ff
+ring-ver-color=6987d7ff
+ring-wrong-color=a43c64ff
+
+line-color=6b164eff
+line-caps-lock-color=6b164eff
+line-clear-color=201c36ff
+line-ver-color=6582d0ff
+line-wrong-color=c34162ff
+
+text-color=cdd6f4ff
+text-caps-lock-color=cdd6f4ff
+text-clear-color=201c36ff
+text-ver-color=201c36ff
+text-wrong-color=cdd6f4ff
