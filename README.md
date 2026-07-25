@@ -10,7 +10,10 @@ Remake of my previous Hyprland rice
 - Hyprland
 - Hyprpicker
 - Kitty
+- MPD
+- MPC
 - Nautilus
+- RMPC
 - Rofi
 - Starship
 - Swayidle
