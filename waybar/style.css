@@ -9,7 +9,7 @@
 window#waybar {
     background-color: @base;
     color: @text;
-    border-radius: 99px;
+    border-radius: 10px;
 }
 
 .modules-left {
@@ -62,7 +62,8 @@ window#waybar {
     font-weight: 600;
 }
 
-tooltip {
+tooltip,
+#tray menu {
     border-radius: 10px;
     background-color: alpha(@mantle, 0.7);
 }
@@ -85,7 +86,19 @@ tooltip {
 }
 
 #clock:hover,
-#pulseaudio:hover {
+#pulseaudio:hover,
+#tray menu menuitem:hover {
     background-color: @text;
     color: @surface1;
+}
+
+#tray {
+    margin: 4px 0px;
+    padding: 0px 4px;
+    border-right: 1px solid @text;
+}
+
+#tray menu menuitem {
+    padding: 2px 4px;
+    border-radius: 6px;
 }
