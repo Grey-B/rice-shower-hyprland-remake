@@ -31,6 +31,21 @@ hl.window_rule({
     no_focus = true,
 })
 
+-- Starting widths
+hl.window_rule({
+    name = "blender_starting_width",
+    match = { class = "blender" },
+
+    scrolling_width = 0.97
+})
+
+hl.window_rule({
+    name = "godot_starting_width",
+    match = { class = "Godot" },
+
+    scrolling_width = 0.97
+})
+
 -- Hyprland-run windowrule
 hl.window_rule({
     name  = "move-hyprland-run",
