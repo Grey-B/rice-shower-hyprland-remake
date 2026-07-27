@@ -9,6 +9,7 @@ Remake of my previous Hyprland rice
 - Hyprcap
 - Hyprland
 - Hyprpicker
+- Hyprsunset
 - Kitty
 - MPD
 - MPC
