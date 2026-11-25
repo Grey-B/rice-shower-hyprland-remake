@@ -6,30 +6,28 @@
 local mainMod     = "SUPER"
 
 -- Set programs that you use
-local bar         = "/home/grey/.config/waybar/scripts/launch.sh"
-local browser     = "zen-browser"
+local browser     = "librewolf"
 local clipboard   =
 "cliphist list | rofi -dmenu -display-columns 2  -theme /home/grey/.config/rofi/type-4/style-7.rasi| cliphist decode | wl-copy"
 local fileManager = "nautilus"
 local launcher    = "/home/grey/.config/rofi/type-4/launcher.sh"
-local lock        = "swaylock"
 local logout      = "command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"
-local notif       = "swaync-client --toggle-panel"
+local notif       = "qs ipc call notifications toggle"
 local terminal    = "kitty"
+local wallpaper	  = "qs ipc call wallpaper toggle"
 
 ---------------------
 ---- KEYBINDINGS ----
 ---------------------
 
 hl.bind(mainMod .. " + ALT + M", hl.dsp.exec_cmd(logout)) --Logout
-hl.bind(mainMod .. " + ALT + L", hl.dsp.exec_cmd(lock))   --Lock screen
 
 -- Layout
 hl.bind(mainMod .. " + W", hl.dsp.window.close())                      -- Close window
 hl.bind(mainMod .. " + F", hl.dsp.window.float({ action = "toggle" })) -- Toggle floating window
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())                     -- Toggle pseudo window
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))               -- Toggle split. Dwindle only
-hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(bar))               -- Reload Waybar and SwayNC
+hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(wallpaper))               -- Reload Waybar and SwayNC
 
 -- Open apps
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))        -- Terminal
