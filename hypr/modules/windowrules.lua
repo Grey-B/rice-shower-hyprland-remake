@@ -62,31 +62,3 @@ hl.window_rule({
     no_blur = true
 
 })
-
--- Enable SwayNC blur
-hl.layer_rule({
-    name         = "notif-center-blur",
-    match        = { namespace = "swaync-control-center" },
-    ignore_alpha = 0.5,
-    blur         = true
-})
-
-hl.layer_rule({
-    name         = "notif-blur",
-    match        = { namespace = "swaync-notification-window" },
-    ignore_alpha = 0.5,
-    blur         = true
-})
-
--- Slide SwayNC window from right
-hl.layer_rule({
-    name      = "notif-center-animation",
-    match     = { namespace = "swaync-control-center" },
-    animation = "slide right"
-})
-
-hl.layer_rule({
-    name      = "notif-animation",
-    match     = { namespace = "swaync-notification-window" },
-    animation = "slide right"
-})
