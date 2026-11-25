@@ -10,7 +10,7 @@ local browser     = "librewolf"
 local clipboard   =
 "cliphist list | rofi -dmenu -display-columns 2  -theme /home/grey/.config/rofi/type-4/style-7.rasi| cliphist decode | wl-copy"
 local fileManager = "nautilus"
-local launcher    = "pkill rofi || rofi -show drun -theme /home/grey/.config/rofi/type-4"
+local launcher    = "pkill rofi || rofi -show drun -theme /home/grey/.config/rofi/type-4/style-7.rasi"
 local logout      = "command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"
 local notif       = "qs ipc call notifications toggle"
 local terminal    = "kitty"
